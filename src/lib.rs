@@ -72,6 +72,8 @@ pub(crate) mod to_kana_node_tree;
 pub(crate) mod to_katakana;
 pub(crate) mod to_romaji;
 pub(crate) mod to_romaji_node_tree;
+pub(crate) mod to_ukrainian;
+pub(crate) mod to_ukrainian_node_tree;
 
 #[cfg_attr(docsrs, doc(cfg(feature = "tokenize")))]
 #[cfg(feature = "tokenize")]

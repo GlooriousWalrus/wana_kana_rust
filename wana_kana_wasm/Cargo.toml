@@ -10,5 +10,5 @@ edition = "2018"
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen = "0.2.55"
+wasm-bindgen = "0.2.89"
 wana_kana = { path = "../" }
