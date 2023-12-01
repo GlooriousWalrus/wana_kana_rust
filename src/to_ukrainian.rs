@@ -124,12 +124,12 @@ mod tests {
 
     #[test]
     fn converts_long_dash_ー_chōonpu_in_katakana_to_long_vowel() {
-        assert_eq!(to_ukrainian("スーパー"), "супа"); //суупаа
+        assert_eq!(to_ukrainian("スーパー"), "суупаа"); //суупаа
     }
 
     #[test]
     fn doesnt_convert_オー_to_ou_which_occurs_with_hiragana() {
-        assert_eq!(to_ukrainian("缶コーヒー"), "缶кохі");
+        assert_eq!(to_ukrainian("缶コーヒー"), "缶коохіі");
     }
 
     #[test]
@@ -186,7 +186,7 @@ mod tests {
         }
         #[test]
         fn small_yo() {
-            assert_eq!(to_ukrainian("ょ"), "yo");
+            assert_eq!(to_ukrainian("ょ"), "йо");
         }
         #[test]
         fn small_a() {
@@ -215,7 +215,7 @@ mod tests {
 
         #[test]
         fn おんよみ() {
-            assert_eq!(to_ukrainian("おんよみ"), "он'йомі");
+            assert_eq!(to_ukrainian("おんよみ"), "онйомі");
         }
         #[test]
         fn んよ_んあ_んゆ() {
@@ -223,7 +223,7 @@ mod tests {
         }
         #[test]
         fn シンヨ() {
-            assert_eq!(to_ukrainian("シンヨ"), "шін'йо");
+            assert_eq!(to_ukrainian("シンヨ"), "шінйо");
         }
     }
 }

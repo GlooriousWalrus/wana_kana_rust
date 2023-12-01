@@ -120,7 +120,7 @@ pub trait ConvertJapanese {
     /// ```
     /// use wana_kana::ConvertJapanese;
     /// use wana_kana::Options;
-    /// assert_eq!("ひらがな　カタカナ".to_ukrainian_with_opt(Options {upcase_katakana: true, ..Default::default() } ), "хірагана КАТАКАНА");
+    /// assert_eq!("ひらがな　カタカナ".to_ukrainian_with_opt(Options {upcase_katakana: true, ..Default::default() } ), "хіраґана КАТАКАНА");
     /// ```
 
     fn to_ukrainian_with_opt(self, options: Options) -> String;
