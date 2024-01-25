@@ -110,9 +110,15 @@ pub trait ConvertJapanese {
     /// use wana_kana::Options;
     /// assert_eq!("ひらがな　カタカナ".to_romaji_with_opt(Options {upcase_katakana: true, ..Default::default() } ), "hiragana KATAKANA");
     /// ```
-
     fn to_romaji_with_opt(self, options: Options) -> String;
 
+
+    /// Convert kana to ukrainian
+    /// # Examples
+    /// ```
+    /// use wana_kana::ConvertJapanese;
+    /// assert_eq!("ひらがな　カタカナ".to_ukrainian(), "хіраґана КАТАКАНА");
+    /// ```
     fn to_ukrainian(self) -> String;
 
     /// Convert kana to ukrainian with Options.
@@ -122,7 +128,6 @@ pub trait ConvertJapanese {
     /// use wana_kana::Options;
     /// assert_eq!("ひらがな　カタカナ".to_ukrainian_with_opt(Options {upcase_katakana: true, ..Default::default() } ), "хіраґана КАТАКАНА");
     /// ```
-
     fn to_ukrainian_with_opt(self, options: Options) -> String;
 }
 

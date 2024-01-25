@@ -101,30 +101,32 @@ lazy_static! {
             (
                 'ぁ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "ай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "ай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "а",
                 },
             ),
             (
                 'あ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "ай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "ай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "а",
                 },
             ),
@@ -176,13 +178,13 @@ lazy_static! {
                                 output: "ії",
                             },
                         ),
-                        (
-                            'ち',
-                            Node {
-                                transitions: None,
-                                output: "їчі",
-                            },
-                        ),
+                        // (
+                        //     'ち',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "їчі",
+                        //     },
+                        // ),
                     ]),
                     output: "і",
                 },
@@ -244,6 +246,14 @@ lazy_static! {
                                 //output: "о\u{304}",
                             },
                         ),
+                        (
+                            'お',
+                            Node {
+                                transitions: None,
+                                output: "о",
+                                //output: "о\u{304}",
+                            },
+                        ),
                     ]),
                     output: "о",
                 },
@@ -252,21 +262,21 @@ lazy_static! {
                 'か',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ち',
-                                        Node {
-                                            transitions: None,
-                                            output: "каїчі",
-                                        },
-                                    ),
-                                ]),
-                                output: "кай",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: Some(vec![
+                        //             (
+                        //                 'ち',
+                        //                 Node {
+                        //                     transitions: None,
+                        //                     output: "каїчі",
+                        //                 },
+                        //             ),
+                        //         ]),
+                        //         output: "кай",
+                        //     },
+                        // ),
                         (
                             'あ',
                             Node {
@@ -281,30 +291,31 @@ lazy_static! {
             (
                 'が',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ち',
-                                        Node {
-                                            transitions: None,
-                                            output: "ґаїчі",
-                                        },
-                                    ),
-                                    (
-                                        'も',
-                                        Node {
-                                            transitions: None,
-                                            output: "ґаїмо",
-                                        },
-                                    ),
-                                ]),
-                                output: "ґай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: Some(vec![
+                    //                 (
+                    //                     'ち',
+                    //                     Node {
+                    //                         transitions: None,
+                    //                         output: "ґаїчі",
+                    //                     },
+                    //                 ),
+                    //                 (
+                    //                     'も',
+                    //                     Node {
+                    //                         transitions: None,
+                    //                         output: "ґаїмо",
+                    //                     },
+                    //                 ),
+                    //             ]),
+                    //             output: "ґай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ґа",
                 },
             ),
@@ -312,21 +323,21 @@ lazy_static! {
                 'き',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ち',
-                                        Node {
-                                            transitions: None,
-                                            output: "кіїчі",
-                                        },
-                                    ),
-                                ]),
-                                output: "кій",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: Some(vec![
+                        //             (
+                        //                 'ち',
+                        //                 Node {
+                        //                     transitions: None,
+                        //                     output: "кіїчі",
+                        //                 },
+                        //             ),
+                        //         ]),
+                        //         output: "кій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -372,13 +383,13 @@ lazy_static! {
                 'ぎ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "ґій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "ґій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -423,28 +434,28 @@ lazy_static! {
                 'く',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'な',
-                                        Node {
-                                            transitions: None,
-                                            output: "куїна",
-                                        },
-                                    ),
-                                ]),
-                                output: "куй",
-                            },
-                        ),
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "куй",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: Some(vec![
+                        //             (
+                        //                 'な',
+                        //                 Node {
+                        //                     transitions: None,
+                        //                     output: "куїна",
+                        //                 },
+                        //             ),
+                        //         ]),
+                        //         output: "куй",
+                        //     },
+                        // ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "куй",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -488,6 +499,7 @@ lazy_static! {
             (
                 'ぐ',
                 Node {
+                    // DOUBLE VOWEL
                     transitions: Some(vec![
                         (
                             'う',
@@ -503,15 +515,16 @@ lazy_static! {
             (
                 'け',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "кей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "кей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ке",
                 },
             ),
@@ -525,29 +538,48 @@ lazy_static! {
             (
                 'こ',
                 Node {
-                    transitions: None,
+                    // DOUBLE VOWEL
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "ко",
+                            },
+                        ),
+                    ]),
                     output: "ко",
                 },
             ),
             (
                 'ご',
                 Node {
-                    transitions: None,
+                    // DOUBLE VOWEL
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "ґо",
+                            },
+                        ),
+                    ]),
                     output: "ґо",
                 },
             ),
             (
                 'さ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "сай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "сай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "са",
                 },
             ),
@@ -562,13 +594,13 @@ lazy_static! {
                 'し',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "шій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "шій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -622,21 +654,21 @@ lazy_static! {
                 'じ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'え',
-                                        Node {
-                                            transitions: None,
-                                            output: "джіїє",
-                                        },
-                                    ),
-                                ]),
-                                output: "джій",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: Some(vec![
+                        //             (
+                        //                 'え',
+                        //                 Node {
+                        //                     transitions: None,
+                        //                     output: "джіїє",
+                        //                 },
+                        //             ),
+                        //         ]),
+                        //         output: "джій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -688,30 +720,32 @@ lazy_static! {
             (
                 'ず',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "дзуй"
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "дзуй"
+                    //         },
+                    //     ),
+                    // ]),
                     output: "дзу",
                 },
             ),
             (
                 'せ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "сей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "сей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "се",
                 },
             ),
@@ -729,15 +763,16 @@ lazy_static! {
                         (
                             'う',
                             Node {
-                                transitions: Some(vec![
-                                    // (
-                                    //     'い',
-                                    //     Node {
-                                    //         transitions: None,
-                                    //         output: "сой",
-                                    //     },
-                                    // ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "сой",
+                                //         },
+                                //     ),
+                                // ]),
                                 output: "со",
                             },
                         ),
@@ -763,30 +798,32 @@ lazy_static! {
             (
                 'た',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "тай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "тай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "та",
                 },
             ),
             (
                 'だ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "дай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "дай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "да",
                 },
             ),
@@ -794,13 +831,13 @@ lazy_static! {
                 'ち',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "чій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "чій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -848,13 +885,13 @@ lazy_static! {
                 'ぢ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "джій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "джій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -900,23 +937,24 @@ lazy_static! {
             (
                 'つ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ど',
-                                        Node {
-                                            transitions: None,
-                                            output: "цуїдо",
-                                        },
-                                    ),
-                                ]),
-                                output: "цуй",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: Some(vec![
+                    //                 (
+                    //                     'ど',
+                    //                     Node {
+                    //                         transitions: None,
+                    //                         output: "цуїдо",
+                    //                     },
+                    //                 ),
+                    //             ]),
+                    //             output: "цуй",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "цу",
                 },
             ),
@@ -936,7 +974,7 @@ lazy_static! {
             ),
             (
                 'で',
-                Node {
+                Node { //????
                     transitions: Some(vec![
                         (
                             'ぃ',
@@ -982,15 +1020,16 @@ lazy_static! {
             (
                 'な',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "най",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "най",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "на",
                 },
             ),
@@ -998,13 +1037,13 @@ lazy_static! {
                 'に',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "нії",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "нії",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1049,15 +1088,16 @@ lazy_static! {
             (
                 'ぬ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "нуй",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "нуй",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ну",
                 },
             ),
@@ -1080,37 +1120,39 @@ lazy_static! {
             (
                 'の',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "ной",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "ной",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "но",
                 },
             ),
             (
                 'は',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "хай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "хай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ха",
                 },
             ),
             (
                 'ば',
                 Node {
-                    // transitions: None,
+                    // transitions: None, ???
                     transitions: Some(vec![
                         (
                             'あ',
@@ -1126,15 +1168,16 @@ lazy_static! {
             (
                 'ぱ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "пай"
-                            }
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "пай"
+                    //         }
+                    //     ),
+                    // ]),
                     output: "па",
                 },
             ),
@@ -1142,13 +1185,13 @@ lazy_static! {
                 'ひ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "хій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "хій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1194,13 +1237,13 @@ lazy_static! {
                 'び',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "бій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "бій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1246,13 +1289,13 @@ lazy_static! {
                 'ぴ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "пій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "пій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1298,13 +1341,13 @@ lazy_static! {
                 'ふ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "фій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "фій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1363,81 +1406,109 @@ lazy_static! {
             (
                 'へ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "хей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "хей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "хе",
                 },
             ),
             (
                 'べ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "бей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "бей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "бе",
                 },
             ),
             (
                 'ぺ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "пей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "пей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "пе",
                 },
             ),
             (
                 'ほ',
                 Node {
-                    transitions: None,
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "хо",
+                            },
+                        ),
+                    ]),
                     output: "хо",
                 },
             ),
             (
                 'ぼ',
                 Node {
-                    transitions: None,
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "бо",
+                            },
+                        ),
+                    ]),
                     output: "бо",
                 },
             ),
             (
                 'ぽ',
                 Node {
-                    transitions: None,
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "по",
+                            },
+                        ),
+                    ]),
                     output: "по",
                 },
             ),
             (
                 'ま',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "май",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "май",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ма",
                 },
             ),
@@ -1445,13 +1516,13 @@ lazy_static! {
                 'み',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "мій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "мій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -1496,38 +1567,40 @@ lazy_static! {
             (
                 'む',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ち',
-                                        Node {
-                                            transitions: None,
-                                            output: "муїчі",
-                                        },
-                                    ),
-                                ]),
-                                output: "муй",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: Some(vec![
+                    //                 (
+                    //                     'ち',
+                    //                     Node {
+                    //                         transitions: None,
+                    //                         output: "муїчі",
+                    //                     },
+                    //                 ),
+                    //             ]),
+                    //             output: "муй",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "му",
                 },
             ),
             (
                 'め',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "мей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "мей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ме",
                 },
             ),
@@ -1535,11 +1608,18 @@ lazy_static! {
                 'も',
                 Node {
                     transitions: Some(vec![
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "мой",
+                        //     },
+                        // ),
                         (
-                            'い',
+                            'う',
                             Node {
                                 transitions: None,
-                                output: "мой",
+                                output: "мо",
                             },
                         ),
                     ]),
@@ -1571,26 +1651,27 @@ lazy_static! {
                 'ゆ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "юй",
-                            },
-                        ),
+                        // (
+                        //     'い',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "юй",
+                        //     },
+                        // ),
                         (
                             'う',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "юї",
-                                        },
-                                    ),
-                                ]),
-                                output: "юу",
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "юї",
+                                //         },
+                                //     ),
+                                // ]),
+                                output: "ю",
                             },
                         ),
                     ]),
@@ -1640,21 +1721,21 @@ lazy_static! {
                 'り',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ち',
-                                        Node {
-                                            transitions: None,
-                                            output: "ріїчі",
-                                        },
-                                    ),
-                                ]),
-                                output: "рій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: Some(vec![
+                        //             (
+                        //                 'ち',
+                        //                 Node {
+                        //                     transitions: None,
+                        //                     output: "ріїчі",
+                        //                 },
+                        //             ),
+                        //         ]),
+                        //         output: "рій",
+                        //     },
+                        // ),
                         (
                             'え',
                             Node {
@@ -1743,23 +1824,24 @@ lazy_static! {
             (
                 'わ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: Some(vec![
-                                    (
-                                        'ず',
-                                        Node {
-                                            transitions: None,
-                                            output: "ваїдзу",
-                                        },
-                                    ),
-                                ]),
-                                output: "вай",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: Some(vec![
+                    //                 (
+                    //                     'ず',
+                    //                     Node {
+                    //                         transitions: None,
+                    //                         output: "ваїдзу",
+                    //                     },
+                    //                 ),
+                    //             ]),
+                    //             output: "вай",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ва",
                 },
             ),
@@ -1780,7 +1862,15 @@ lazy_static! {
             (
                 'を',
                 Node {
-                    transitions: None,
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "во",
+                            },
+                        ),
+                    ]),
                     output: "во",
                 },
             ),
@@ -1906,7 +1996,15 @@ lazy_static! {
                         (
                             'ゆ',
                             Node {
-                                transitions: None,
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "н\'ю",
+                                        },
+                                    ),
+                                ]),
                                 output: "н\'ю",
                             },
                         ),
@@ -1988,22 +2086,32 @@ lazy_static! {
                         (
                             'も',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ммо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ммо",
                             },
                         ),
                         (
                             'ぱ',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "мпай"
-                                        }
-                                    ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "мпай"
+                                //         }
+                                //     ),
+                                // ]),
                                 output: "мпа"
                             },
                         ),
@@ -2055,22 +2163,32 @@ lazy_static! {
                         (
                             'ぺ',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "мпей",
-                                        },
-                                    ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "мпей",
+                                //         },
+                                //     ),
+                                // ]),
                                 output: "мпе"
                             },
                         ),
                         (
                             'ぽ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "мпо",
+                                        },
+                                    ),
+                                ]),
                                 output: "мпо"
                             },
                         ),
@@ -2136,7 +2254,16 @@ lazy_static! {
                         (
                             'ぼ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "мбо",
+                                        },
+                                    ),
+                                ]),
                                 output: "мбо"
                             },
                         ),
@@ -2155,13 +2282,13 @@ lazy_static! {
                 'ゔ',
                 Node {
                     transitions: Some(vec![
-                        (
-                            'ぃ',
-                            Node {
-                                transitions: None,
-                                output: "вій",
-                            },
-                        ),
+                        // (
+                        //     'ぃ',
+                        //     Node {
+                        //         transitions: None,
+                        //         output: "вій",
+                        //     },
+                        // ),
                         (
                             'ぇ',
                             Node {
@@ -2220,22 +2347,32 @@ lazy_static! {
             (
                 'ゔ',
                 Node {
-                    transitions: Some(vec![
-                        (
-                            'い',
-                            Node {
-                                transitions: None,
-                                output: "вей",
-                            },
-                        ),
-                    ]),
+                    transitions: None,
+                    // transitions: Some(vec![
+                    //     (
+                    //         'い',
+                    //         Node {
+                    //             transitions: None,
+                    //             output: "вей",
+                    //         },
+                    //     ),
+                    // ]),
                     output: "ве",
                 },
             ),
             (
                 'ゔ',
                 Node {
-                    transitions: None,
+                    // DOUBLE VOWEL
+                    transitions: Some(vec![
+                        (
+                            'う',
+                            Node {
+                                transitions: None,
+                                output: "во",
+                            },
+                        ),
+                    ]),
                     output: "во",
                 },
             ),
@@ -2449,16 +2586,16 @@ lazy_static! {
                         (
                             'か',
                             Node {
-                                // transitions: None,
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "ккай"
-                                        }
-                                    )
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "ккай"
+                                //         }
+                                //     )
+                                // ]),
                                 output: "кка",
                             },
                         ),
@@ -2473,13 +2610,13 @@ lazy_static! {
                             'き',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ккій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ккій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2525,13 +2662,13 @@ lazy_static! {
                             'ぎ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ґґій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ґґій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2577,13 +2714,13 @@ lazy_static! {
                             'く',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ккій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ккій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2649,14 +2786,32 @@ lazy_static! {
                         (
                             'こ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "кко",
+                                        },
+                                    ),
+                                ]),
                                 output: "кко",
                             },
                         ),
                         (
                             'ご',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ґґо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ґґо",
                             },
                         ),
@@ -2678,13 +2833,13 @@ lazy_static! {
                             'し',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "шшій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "шшій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2730,13 +2885,13 @@ lazy_static! {
                             'じ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "дджій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "дджій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2809,14 +2964,32 @@ lazy_static! {
                         (
                             'そ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ссо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ссо",
                             },
                         ),
                         (
                             'ぞ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ддзо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ддзо",
                             },
                         ),
@@ -2838,13 +3011,13 @@ lazy_static! {
                             'ち',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ччій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ччій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2890,13 +3063,13 @@ lazy_static! {
                             'ぢ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "дджій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "дджій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -2969,29 +3142,48 @@ lazy_static! {
                         (
                             'と',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "тто",
+                                        },
+                                    ),
+                                ]),
                                 output: "тто",
                             },
                         ),
                         (
                             'ど',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ддо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ддо",
                             },
                         ),
                         (
                             'な',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "най",
-                                        },
-                                    ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "най",
+                                //         },
+                                //     ),
+                                // ]),
                                 output: "на",
                             },
                         ),
@@ -2999,13 +3191,13 @@ lazy_static! {
                             'に',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ній",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ній",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3041,15 +3233,16 @@ lazy_static! {
                         (
                             'ぬ',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "нуй",
-                                        },
-                                    ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "нуй",
+                                //         },
+                                //     ),
+                                // ]),
                                 output: "ну",
                             },
                         ),
@@ -3063,7 +3256,16 @@ lazy_static! {
                         (
                             'の',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "но",
+                                        },
+                                    ),
+                                ]),
                                 output: "но",
                             },
                         ),
@@ -3092,13 +3294,13 @@ lazy_static! {
                             'ひ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ххій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ххій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3144,13 +3346,13 @@ lazy_static! {
                             'び',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ббій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ббій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3196,13 +3398,13 @@ lazy_static! {
                             'ぴ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ппій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ппій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3248,13 +3450,13 @@ lazy_static! {
                             'ふ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ффій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ффій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3334,21 +3536,48 @@ lazy_static! {
                         (
                             'ほ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ххо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ххо",
                             },
                         ),
                         (
                             'ぼ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ббо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ббо",
                             },
                         ),
                         (
                             'ぽ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ппо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ппо",
                             },
                         ),
@@ -3363,13 +3592,13 @@ lazy_static! {
                             'み',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ммій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ммій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3428,7 +3657,16 @@ lazy_static! {
                         (
                             'も',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "ммо",
+                                        },
+                                    ),
+                                ]),
                                 output: "ммо",
                             },
                         ),
@@ -3456,15 +3694,16 @@ lazy_static! {
                         (
                             'ゆ',
                             Node {
-                                transitions: Some(vec![
-                                    (
-                                        'い',
-                                        Node {
-                                            transitions: None,
-                                            output: "юй",
-                                        },
-                                    ),
-                                ]),
+                                transitions: None,
+                                // transitions: Some(vec![
+                                //     (
+                                //         'い',
+                                //         Node {
+                                //             transitions: None,
+                                //             output: "юй",
+                                //         },
+                                //     ),
+                                // ]),
                                 output: "ю",
                             },
                         ),
@@ -3511,13 +3750,13 @@ lazy_static! {
                             'り',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ррій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ррій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3576,7 +3815,16 @@ lazy_static! {
                         (
                             'ろ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "рро",
+                                        },
+                                    ),
+                                ]),
                                 output: "рро",
                             },
                         ),
@@ -3604,7 +3852,16 @@ lazy_static! {
                         (
                             'を',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "вво",
+                                        },
+                                    ),
+                                ]),
                                 output: "вво",
                             },
                         ),
@@ -3619,13 +3876,13 @@ lazy_static! {
                             'ゔ',
                             Node {
                                 transitions: Some(vec![
-                                    (
-                                        'ぃ',
-                                        Node {
-                                            transitions: None,
-                                            output: "ввій",
-                                        },
-                                    ),
+                                    // (
+                                    //     'ぃ',
+                                    //     Node {
+                                    //         transitions: None,
+                                    //         output: "ввій",
+                                    //     },
+                                    // ),
                                     (
                                         'ぇ',
                                         Node {
@@ -3691,7 +3948,16 @@ lazy_static! {
                         (
                             'ゔ',
                             Node {
-                                transitions: None,
+                                // DOUBLE VOWEL
+                                transitions: Some(vec![
+                                    (
+                                        'う',
+                                        Node {
+                                            transitions: None,
+                                            output: "вво",
+                                        },
+                                    ),
+                                ]),
                                 output: "вво",
                             },
                         ),

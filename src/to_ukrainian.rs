@@ -8,10 +8,127 @@ pub fn to_ukrainian(input: &str) -> String {
     to_ukrainian_with_opt(input, Options::default())
 }
 
+static VOWEL_ENDINGS: &[char] = &[
+    // 'a' ending Hiraganas and Katanakas
+    'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'や', 'ら', 'わ', 'が', 'ざ', 'だ', 'ば', 'ぱ',
+    'ア', 'カ', 'サ', 'タ', 'ナ', 'ハ', 'マ', 'ヤ', 'ラ', 'ワ', 'ガ', 'ザ', 'ダ', 'バ', 'パ',
+
+    // 'i' ending Hiraganas and Katanakas
+    'い', 'き', 'し', 'ち', 'に', 'ひ', 'み', 'り', 'ぎ', 'じ', 'ぢ', 'び', 'ぴ',
+    'イ', 'キ', 'シ', 'チ', 'ニ', 'ヒ', 'ミ', 'リ', 'ギ', 'ジ', 'ヂ', 'ビ', 'ピ',
+
+    // 'u' ending Hiraganas and Katanakas
+    'う', 'く', 'す', 'つ', 'ぬ', 'ふ', 'む', 'ゆ', 'る', 'ぐ', 'ず', 'づ', 'ぶ', 'ぷ',
+    'ウ', 'ク', 'ス', 'ツ', 'ヌ', 'フ', 'ム', 'ユ', 'ル', 'グ', 'ズ', 'ヅ', 'ブ', 'プ',
+
+    // 'e' ending Hiraganas and Katanakas
+    'え', 'け', 'せ', 'て', 'ね', 'へ', 'め', 'れ', 'げ', 'ぜ', 'で', 'べ', 'ぺ',
+    'エ', 'ケ', 'セ', 'テ', 'ネ', 'ヘ', 'メ', 'レ', 'ゲ', 'ゼ', 'デ', 'ベ', 'ペ',
+
+    // 'o' ending Hiraganas and Katanakas
+    'お', 'こ', 'そ', 'と', 'の', 'ほ', 'も', 'よ', 'ろ', 'を', 'ご', 'ぞ', 'ど', 'ぼ', 'ぽ',
+    'オ', 'コ', 'ソ', 'ト', 'ノ', 'ホ', 'モ', 'ヨ', 'ロ', 'ヲ', 'ゴ', 'ゾ', 'ド', 'ボ', 'ポ',
+];
+
+static I_ENDINGS: &[char] = &[
+    // 'i' ending Hiraganas and Katanakas
+    'い', 'き', 'し', 'ち', 'に', 'ひ', 'み', 'り', 'ぎ', 'じ', 'ぢ', 'び', 'ぴ',
+    'イ', 'キ', 'シ', 'チ', 'ニ', 'ヒ', 'ミ', 'リ', 'ギ', 'ジ', 'ヂ', 'ビ', 'ピ',
+];
+
+static CONSONANT_BEGINNINGS: &[char] = &[
+    // Ka, Ki, Ku, Ke, Ko series
+    'か', 'き', 'く', 'け', 'こ',
+    'カ', 'キ', 'ク', 'ケ', 'コ',
+    'が', 'ぎ', 'ぐ', 'げ', 'ご',
+    'ガ', 'ギ', 'グ', 'ゲ', 'ゴ',
+
+    // Sa, Shi, Su, Se, So series
+    'さ', 'し', 'す', 'せ', 'そ',
+    'サ', 'シ', 'ス', 'セ', 'ソ',
+    'ざ', 'じ', 'ず', 'ぜ', 'ぞ',
+    'ザ', 'ジ', 'ズ', 'ゼ', 'ゾ',
+
+    // Ta, Chi, Tsu, Te, To series
+    'た', 'ち', 'つ', 'て', 'と',
+    'タ', 'チ', 'ツ', 'テ', 'ト',
+    'だ', 'ぢ', 'づ', 'で', 'ど',
+    'ダ', 'ヂ', 'ヅ', 'デ', 'ド',
+
+    // Na, Ni, Nu, Ne, No series
+    'な', 'に', 'ぬ', 'ね', 'の',
+    'ナ', 'ニ', 'ヌ', 'ネ', 'ノ',
+
+    // Ha, Hi, Fu, He, Ho series
+    'は', 'ひ', 'ふ', 'へ', 'ほ',
+    'ハ', 'ヒ', 'フ', 'ヘ', 'ホ',
+    'ば', 'び', 'ぶ', 'べ', 'ぼ',
+    'バ', 'ビ', 'ブ', 'ベ', 'ボ',
+    'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ',
+    'パ', 'ピ', 'プ', 'ペ', 'ポ',
+
+    // Ma, Mi, Mu, Me, Mo series
+    'ま', 'み', 'む', 'め', 'も',
+    'マ', 'ミ', 'ム', 'メ', 'モ',
+
+    // Ya, Yu, Yo series
+    'や',       'ゆ',       'よ',
+    'ヤ',       'ユ',       'ヨ',
+
+    // Ra, Ri, Ru, Re, Ro series
+    'ら', 'り', 'る', 'れ', 'ろ',
+    'ラ', 'リ', 'ル', 'レ', 'ロ',
+
+    // Wa, Wo series
+    'わ', 'を',
+    'ワ', 'ヲ',
+
+    // N (ん/ン) can be considered as well
+    'ん',
+    'ン',
+];
+
+// static VOWELS: &[char] = &['а', 'е', 'і', 'о', 'у'];
+// static CONSONATS: &[char] = &['к', 'с', 'ш', 'т', 'ч', 'н', 'х', 'ф', 'м', 'р', 'в', 'ґ', 'б', 'п', 'я'];
+
 /// Convert kana to romaji
 pub fn to_ukrainian_with_opt(orig: &str, options: Options) -> String {
-    let kana = katakana_to_hiragana_with_opt(orig, true);
-    let orig_chars = orig.chars().collect::<Vec<_>>();
+    let mut result = String::new();
+    orig.to_owned().push(' ');
+    let mut chars = orig.chars().peekable();
+
+    let mut last_char = 'ä';
+
+    while let Some(c) = chars.next() {
+
+
+        // vowel + _ + い = "аї", "ії", "уї", "еї", "ої"
+        // い + _ + consonant/whitespace/none = "ай", "ій", "уй", "ей", "ой"
+        if VOWEL_ENDINGS.contains(&last_char) 
+            && c == '_' 
+            && chars.next_if(|x| x == &'い' || x == &'イ').is_some() 
+        {
+            if chars.next_if(|x| x == &'え' || x == &'エ').is_some() {
+                result.push_str("їє")
+            } else {
+                result.push('ї')
+            }
+        } else if VOWEL_ENDINGS.contains(&last_char)
+            && (c == 'い' || c == 'イ')
+        {
+            result.push('й')
+        } else {
+            result.push(c);
+        }
+
+        last_char = c;
+    }
+
+    let result = result.replace('_', "");
+
+
+    let kana = katakana_to_hiragana_with_opt(&result, true);
+    let orig_chars = result.chars().collect::<Vec<_>>();
     let chars = kana.chars().collect::<Vec<_>>();
     let mut ouput = String::with_capacity(orig.len());
     let len = chars.len();
@@ -44,7 +161,7 @@ pub fn to_ukrainian_with_opt(orig: &str, options: Options) -> String {
             curr_pos += result.1;
         }
     }
-    ouput
+    ouput.replace("іе", "іє")
 }
 
 #[cfg(test)]
